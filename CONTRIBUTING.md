@@ -63,6 +63,7 @@
 
 ## Running Tests
 
+TBD
 
 ## Cautions
 
@@ -84,27 +85,27 @@ we also want to save our progress. Let us call this branch "Work". So,
 when all is said and done, in our fork there will be three branches:
 "master", "devel", and "Work".
 
-### Acquiring Moltres and Workflow
+### Acquiring the project and Workflow
 
 We begin with a fork of the main repository. After initially forking the
 repo, we will have two branches in our fork: "main" and "devel".
 
-#### Acquiring a Fork of the Moltres Repository
+#### Acquiring a Fork of the Project Repository
 
 A fork is *your* copy of the project. Github offers an excellent
 [tutorial](http://help.github.com/fork-a-repo/) on how to set one up.
 The rest of this example assumes you have set up the "upstream"
-repository as `moltres/core`. Note that git refers to your fork as
+repository as `s`. Note that git refers to your fork as
 "origin".
 
-First, let's make our "work" branch: :: .../moltres\_dir/\$ git branch
-work .../moltres\_dir/\$ git push origin work
+First, let's make our "work" branch: :: .../project\_dir/\$ git branch
+work .../project\_dir/\$ git push origin work
 
 We now have the following situation: 
 
-- there exists the main copy of the master and devel branches, 
-- there exists your fork's copy of the master, devel, and Work branches, 
- -*AND* there exists your *local* copy of the master, devel, and Work branches. 
+- there exists the main copy of the main and devel branches, 
+- there exists your fork's copy of the main, devel, and Work branches, 
+ -*AND* there exists your *local* copy of the maib, devel, and Work branches. 
 
 It is important now to note that you may wish to work from home or the office.
 If you keep your fork's branches up to date (i.e., "push" your changes before
@@ -122,14 +123,14 @@ to continue working a bit. To begin, let's update our *home's local
 branches*. ::
 
 ```
-    .../moltres_dir/$ git checkout devel
-    .../moltres_dir/$ git pull upstream devel
-    .../moltres_dir/$ git push origin devel
+    .../project_dir/$ git checkout devel
+    .../project_dir/$ git pull upstream devel
+    .../project_dir/$ git push origin devel
 
-    .../moltres_dir/$ git checkout work
-    .../moltres_dir/$ git pull origin work
-    .../moltres_dir/$ git rebase devel
-    .../moltres_dir/$ git push origin work
+    .../project_dir/$ git checkout work
+    .../project_dir/$ git pull origin work
+    .../project_dir/$ git rebase devel
+    .../project_dir/$ git push origin work
 ```
 
 Perhaps a little explanation is required. We first want to make sure
@@ -171,5 +172,6 @@ with the button made available to you.
 A good description of a git workflow with good graphics is available 
 [here](http://nvie.com/posts/a-successful-git-branching-model/).
 
-This contributor document was inspired by the one written by the [Cyclus team
-](https://github.com/cyclus/cyclus).
+This contributor document was inspired by the one written by the [Moltres team
+](https://github.com/arfc/moltres), which in turn was inspired by the one
+written by the [Cyclus team](https://github.com/cyclus/cyclus).
