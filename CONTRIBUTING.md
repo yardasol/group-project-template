@@ -59,7 +59,7 @@
 
 -   Note: if the button is not available, the requester needs to merge
     or rebase from the current HEAD of the blessed's "devel"
-    (or "master") branch.
+    (or "main") branch.
 
 ## Running Tests
 
@@ -83,7 +83,7 @@ For the sake of simplicity, let us assume that we want a single
 all of our work that may not yet pass tests or even compile, but where
 we also want to save our progress. Let us call this branch "Work". So,
 when all is said and done, in our fork there will be three branches:
-"master", "devel", and "Work".
+"main", "devel", and "Work".
 
 ### Acquiring the project and Workflow
 
@@ -105,7 +105,7 @@ We now have the following situation:
 
 - there exists the main copy of the main and devel branches, 
 - there exists your fork's copy of the main, devel, and Work branches, 
- -*AND* there exists your *local* copy of the maib, devel, and Work branches. 
+ -*AND* there exists your *local* copy of the main, devel, and Work branches. 
 
 It is important now to note that you may wish to work from home or the office.
 If you keep your fork's branches up to date (i.e., "push" your changes before
